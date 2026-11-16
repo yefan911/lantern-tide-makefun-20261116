@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081b28"><title>Lantern Tide — Bring the light home</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="masthead"><a class="brand" href="./index.html"><span class="brand-mark">✧</span><span>LANTERN <b>TIDE</b><small>A LITTLE LIGHT GOES A LONG WAY</small></span></a><div class="top-controls"><span class="offline">● OFFLINE / ORIGINAL ARCADE</span><button id="sound" aria-pressed="false">Sound off</button><button id="pause">Pause <kbd>P</kbd></button></div></header>
+  <section class="game-layout">
+    <div class="stage-wrap">
+      <div class="stage-heading"><span id="chapter-label">THE FIRST CROSSING</span><span id="weather-label">A sea full of little stars</span></div>
+      <div class="stage" id="stage"><canvas id="sea" width="960" height="600" aria-label="Lantern Tide ocean arena"></canvas>
+        <div class="hud"><div><small>LIGHTS HOME</small><strong id="rescued">0 <em>/ 8</em></strong></div><div class="hud-center"><small>STORM ARRIVES IN</small><strong id="timer">02:00</strong></div><div class="hud-right"><small>HULL</small><strong id="hull">♥ ♥ ♥</strong></div></div>
+        <div id="toast" class="toast">Bring the light home.</div>
+        <div class="dash-meter"><span>SHIFT / DASH</span><div><i id="dash-fill"></i></div></div>
+        <div id="overlay" class="overlay"><div id="overlay-content"></div></div>
+      </div>
+      <div class="stage-footer"><span><i class="gold-dot"></i> Your tether gathers nearby lights. Return to the lighthouse to bank them.</span><span id="chain-info">0 IN TOW</span></div>
+    </div>
+    <aside class="journal">
+      <div class="eyebrow">THE KEEPER'S JOURNAL</div><h1>Bring the<br><span>light home.</span></h1><p>Every drifting lantern is a wish. Gather them before the tide turns dark.</p>
+      <div class="mission-card"><span class="number">01</span><div><small>YOUR CROSSING</small><strong id="mission-name">Gather 8 lanterns</strong><p id="mission-detail">Chain them together. Deliver them to the glowing lighthouse.</p></div></div>
+      <div class="controls"><h2>CAPTAIN'S CONTROLS</h2><div><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><b>Steer the skiff</b></div><div><span><kbd>SPACE</kbd></span><b>Hold to tether</b></div><div><span><kbd>SHIFT</kbd></span><b>Dash through danger</b></div><div><span><kbd>P</kbd></span><b>Take a breath</b></div></div>
+      <div class="tide-note"><span>✦</span><p><strong>Risk a longer chain.</strong><br>Deliver 3+ lights together for a combo. A hit scatters your cargo.</p></div>
+      <div class="journal-score"><small>VOYAGE SCORE</small><strong id="score">00000</strong><span id="best">PERSONAL BEST · 0</span></div>
+    </aside>
+  </section>
+  <footer class="page-footer"><span>MADE OF MOONLIGHT, SALT & SECOND CHANCES</span><span>THREE CROSSINGS · ONE SAFE HARBOR</span></footer>
+</main>
+<script type="module" src="src/game.js"></script>
+</body></html>
